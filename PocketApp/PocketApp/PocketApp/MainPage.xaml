@@ -5,67 +5,34 @@
              x:Class="PocketApp.MainPage">
 
     <StackLayout>
-        <Frame Background="Transparent" HasShadow="False">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                </Grid.ColumnDefinitions>
-                <StackLayout Grid.Column="0">
-                    <Label Text="Create a kickass banking app using a BasePage in Xamarin" />
-                    <Label Text="thewissen.io  •  4 min" />
-                    <Label>
-                        <Label.FormattedText>
-                            <FormattedString>
-                                <Span Text="software engineering" />
-                            </FormattedString>
-                        </Label.FormattedText>
-                    </Label>
-                </StackLayout>
-                <Image Grid.Column="1" Source="https://picsum.photos/180/120" />
-            </Grid>
-        </Frame>
-        <Frame Background="Transparent" HasShadow="False">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                </Grid.ColumnDefinitions>
-                <StackLayout>
-                    <Label Text="The rise of few-maintainer projects" />
-                    <Label Text="increment.com  •  7 min" />
-                    <Label>
-                        <Label.FormattedText>
-                            <FormattedString>
-                                <Span Text="Best Of" />
-                                <Span Text="software engineering" />
-                            </FormattedString>
-                        </Label.FormattedText>
-                    </Label>
-                </StackLayout>
-                <Image Grid.Column="1" Source="https://picsum.photos/180/120" />
-            </Grid>
-        </Frame>
-        <Frame Background="Transparent" HasShadow="False">
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                </Grid.ColumnDefinitions>
-                <StackLayout>
-                    <Label Text="'Toxic Individualism': Pandemic Politics Driving Health Care Workers From Small Towns" />
-                    <Label Text="NPR  •  4 min" />
-                    <Label>
-                        <Label.FormattedText>
-                            <FormattedString>
-                                <Span Text="Trending" />
-                            </FormattedString>
-                        </Label.FormattedText>
-                    </Label>
-                </StackLayout>
-                <Image Grid.Column="1" Source="https://picsum.photos/180/120" />
-            </Grid>
-        </Frame>
+        <ListView 
+            ItemsSource="{Binding Items}"
+            HasUnevenRows="true">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <StackLayout Grid.Column="0">
+                                <Label Text="{Binding Title}" />
+                                <Label Text="thewissen.io  •  4 min" />
+                                <Label>
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="software engineering" />
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                            </StackLayout>
+                            <Image Grid.Column="1" Source="{Binding ImageSource}" />
+                        </Grid>
+                    </ViewCell>                
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </StackLayout>
 
 </ContentPage>
