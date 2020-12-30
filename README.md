@@ -4,4 +4,4 @@ This purpose of this repo is to complete the [Xamarin Material Design Visual cha
 
 **Pocket app screenshot:**
 
-<img src="./screenshots/pocket-my-list-page.jpeg" height="640">
+<img src="./screenshots/pocket-my-list-page.jpeg" width="414">
