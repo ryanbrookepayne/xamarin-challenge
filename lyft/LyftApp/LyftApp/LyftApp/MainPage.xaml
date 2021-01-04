@@ -3,9 +3,33 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LyftApp.MainPage">
-
+    
     <StackLayout>
-        <Image Source="lyft_map.png" />
+        <!-- TODO: Resize image so it does not squash the rest of the page -->
+        <!-- <Image Source="lyft_map.png" /> -->
+        <Grid Background="LightGray">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <StackLayout Grid.Column="1">
+                <Label 
+                    Text="Protect yourself. Protect your driver."
+                    FontAttributes="Bold" />
+                <Label Text="Wearing a face covering is required to ride.." />
+            </StackLayout>
+        </Grid>
+        <StackLayout>
+            <Label Text="Hey, Ryan" FontSize="Medium" />
+            <Label Text="Where are you going?" FontAttributes="Bold" FontSize="Large" />
+            <Frame>
+                <Entry Placeholder="Search destination" />
+            </Frame>
+            <Label Text="Entrance" FontAttributes="Bold" FontSize="Medium" />
+            <Label Text="Lyft drop off at Nelson Mazda" />
+            <Label Text="Home" FontAttributes="Bold" FontSize="Medium" />
+            <Label Text="1011 Murfreesboro Rd UNIT G5, Frank..." />
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>
