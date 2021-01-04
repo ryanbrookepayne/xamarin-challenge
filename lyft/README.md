@@ -1,6 +1,6 @@
-# Pocket App
+# Lyft
 
-For this challenge, I rebuilt the [Pocket app](https://apps.apple.com/app/read-it-later-pro/id309601447) "My List" screen.
+For this challenge, I rebuilt the [Lyft app](https://apps.apple.com/us/app/lyft/id529379082) request a ride screen.
 
 Original | Android Reproduction | iOS Reproduction
 --- | --- | ---
