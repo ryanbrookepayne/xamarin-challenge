@@ -4,4 +4,5 @@ This purpose of this repo is to complete the [Xamarin Material Design Visual cha
 
 ## Challenges
 
+- [Lyft](./lyft/)
 - [Pocket](./pocket/)
