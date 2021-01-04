@@ -1,14 +1,25 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:WeatherApp"
              x:Class="WeatherApp.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout HorizontalOptions="Center" Padding="0,100">
+        <Label
+            Text="Franklin"
+            HorizontalTextAlignment="Center"
+            FontSize="35" />
+        <Label Text="Mostly Cloudy" HorizontalTextAlignment="Center" />
+        <Label
+            Text="55°"
+            HorizontalTextAlignment="Center"
+            FontSize="100" />
+        <!-- <AbsoluteLayout HorizontalOptions="CenterAndExpand"> -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Label Text="H:55°" Padding="5,0" />
+                <Label Text="L:37°" Padding="5,0" />
+            </StackLayout>
+        <!-- </AbsoluteLayout> -->
     </StackLayout>
 
 </ContentPage>
