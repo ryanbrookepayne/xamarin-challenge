@@ -6,7 +6,6 @@
 
     <StackLayout>
         <Image Source="lyft_map.png" />
-        <Label Text="Where is the image?"></Label>
     </StackLayout>
 
 </ContentPage>

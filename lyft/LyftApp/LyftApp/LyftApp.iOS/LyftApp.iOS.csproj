@@ -115,7 +115,7 @@
         </ProjectReference>
     </ItemGroup>
     <ItemGroup>
-      <EmbeddedResource Include="Resources\lyft_map.png" />
+      <BundleResource Include="Resources\lyft_map.png" />
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
