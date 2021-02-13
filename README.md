@@ -21,9 +21,3 @@ Original | Android | iOS
 Original | Android | iOS
 --- | --- | ---
 ![](./screenshots/weather-original.jpeg) | ![](./screenshots/weather-android.png) | ![](./screenshots/weather-ios.png)
-
-## Notes
-
-- At first I questioned the value of this challenge
-- I'm not that good at frontend styling, why should I invest time in this?
-- But after doing three apps, I realized that repetition is the key to getting good at frontend styling
